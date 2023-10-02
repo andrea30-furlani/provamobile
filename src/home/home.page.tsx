@@ -124,7 +124,7 @@ export default class home extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#FFFFF0',
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
         alignItems: "center", 
         width: 200, 
         height: 40, 
-        borderColor: 'gray', 
+        borderColor:'#006400',
         borderWidth: 1 
     },
     containerTouch:{
