@@ -1,20 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+// import { StyleSheet, Text, View } from 'react-native';
+import Home from './src/home/home.page'
+import DatabaseInit from './src/database/db-init';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+export default class home extends React.Component {
+
+  constructor(props) {
+    super(props);
+    new DatabaseInit
+    console.log("initialize database")
+  }
+
+
+  render() {
+    return (
+      <Home />
+    );
+  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
